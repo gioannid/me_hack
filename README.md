@@ -31,6 +31,9 @@ In a nutshell, here is how to do it:
 1. Reset the camera, as described in the manual above (chapter 3.1)
 2. Connect to <code>Camera-XXXX</code> SSID
 3. Run the program, suppling at the same time the SSID and password of your WiFi network. Upon completion, the camera will make a long beep signaling it is connected to home WiFi
-4. You can connect back to home WiFi as well, camera API is now accessible over http. You can retrieve still images from its feed by hitting 
-<code>http://(camera IP)/?action=snapshot</code> e.g. from Chrome.
+4. You can connect back to home WiFi as well, camera API is now accessible over http. E.g. You can retrieve still images from its feed by hitting 
+<code>http://(camera IP)/?action=snapshot</code>
 5. Additional API functionality is documented (well, sort of...) in <code>com.msc3.PublicDefine.java</code>, feel free to experiment!
+
+In order to get a nice-looking control panel for the camera, point your browser to
+<code>http://(camera IP)/blinkhome.html</code>
